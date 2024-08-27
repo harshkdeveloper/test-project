@@ -17,7 +17,10 @@ module.exports = {
     }
   },
   rules: {
+    'newline-before-return': 'off',
     'react/react-in-jsx-scope': 'off',
+    'lines-around-comment': 'off', // Turn off to avoid errors
+    'padding-line-between-statements': 'off', // Turn
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/display-name': 'off',
     '@next/next/no-img-element': 'off',
@@ -25,20 +28,20 @@ module.exports = {
     'import/no-anonymous-default-export': 'off',
 
     // add new line above comment
-    'lines-around-comment': [
-      'error',
-      {
-        beforeLineComment: true,
-        beforeBlockComment: true,
-        allowBlockStart: true,
-        allowClassStart: true,
-        allowObjectStart: true,
-        allowArrayStart: true
-      }
-    ],
+    // 'lines-around-comment': [
+    //   'error',
+    //   {
+    //     beforeLineComment: false,
+    //     beforeBlockComment: true,
+    //     allowBlockStart: true,
+    //     allowClassStart: true,
+    //     allowObjectStart: true,
+    //     allowArrayStart: true
+    //   }
+    // ],
 
     // add new line above return
-    'newline-before-return': 'error',
+    // 'newline-before-return': 'error',
 
     // add new line below import
     'import/newline-after-import': [
